@@ -55,21 +55,25 @@ $("#randomizer_img").click(function(){
   var pic_hue = $("#img_hue");
 
 
-// changes variables
-  Caman("#outputimg", function () {
-  this.saturation(pic_saturation);
-  this.exposure(50);
-  this.contrast(50);
-  this.brightness(50);
-  this.hue(50);
-  this.render()
-});
+// changes variables to slider
+// Currently Testing since it dosen't work, thats why I added temp values of 50
+//   Caman("#outputimg", function () {
+//   this.saturation(pic_saturation);
+//   this.exposure(50);
+//   this.contrast(50);
+//   this.brightness(50);
+//   this.hue(50);
+//   this.render()
+// });
 
+
+// adds randomization button
   $(this).parent().append('<p>	 <button id = "random_var"> Press me once you have your image </button> </p>');
+  // on click, randomizes picture
   $("#random_var").click(function(){
     Caman("#outputimg", function () {
     this.saturation(Math.random() * (50 - (-50))+50);
-    this.exposure(50);
+    this.exposure(Math.random() * (50 - (-50))+50);
     this.contrast(Math.random() * (50 - (-50)) + 50);
     this.brightness(Math.random() * (50 - (-50)) + 50);
     this.hue(Math.random() * (50 - (-50)) + 50);
