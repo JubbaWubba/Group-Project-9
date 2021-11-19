@@ -56,7 +56,7 @@ $("#randomizer_img").click(function(){
 
 
 // changes variables to slider
-// Currently Testing since it dosen't work, thats why I added temp values of 50
+// Currently Testing since it dosen't work, thats why I edited it out
 //   Caman("#outputimg", function () {
 //   this.saturation(pic_saturation);
 //   this.exposure(50);
@@ -73,10 +73,10 @@ $("#randomizer_img").click(function(){
   $("#random_var").click(function(){
     Caman("#outputimg", function () {
     this.saturation(Math.random() * (50 - (-50))+50);
-    this.exposure(Math.random() * (50 - (-50))+50);
-    this.contrast(Math.random() * (50 - (-50)) + 50);
-    this.brightness(Math.random() * (50 - (-50)) + 50);
-    this.hue(Math.random() * (50 - (-50)) + 50);
+    this.exposure(Math.random() * (10 - (-10))+10);
+    this.contrast(Math.random() * (5 - (-5)) + 5);
+    this.brightness(Math.random() * (10 - (-10)) + 10);
+    this.hue(Math.random() * (20 - (-20)) + 20);
     this.render()
   });
 });
