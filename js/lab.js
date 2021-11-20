@@ -44,6 +44,10 @@ $("#randomizer_img").click(function(){
   $(this).parent().append('<p> Highlight Slider </p>');
   $(this).parent().append('		 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_hue">');
 
+  // randomizer button
+  $(this).parent().append('	<p>	 <button id = "randomize_me"> Press me apply changes </button> </p>');
+
+
 
 // assigns the slider inputs into Variables
 // NEED TO FIND OUT HOW TO GET SLIDER VARIABLE
@@ -57,13 +61,15 @@ $("#randomizer_img").click(function(){
 
 // changes variables to slider
 // Currently Testing since it dosen't work, thats why I just put the variables to 50 except saturation for testing purposes
-  Caman("#outputimg", function () {
-  this.saturation(pic_saturation.value);
-  this.exposure(50);
-  this.contrast(50);
-  this.brightness(50);
-  this.hue(50);
-  this.render()
+  $("#randomize_me").click(function(){
+    Caman("#outputimg", function () {
+    this.saturation(pic_saturation.value);
+    this.exposure(50);
+    this.contrast(50);
+    this.brightness(50);
+    this.hue(50);
+    this.render()
+  });
 });
 
 
