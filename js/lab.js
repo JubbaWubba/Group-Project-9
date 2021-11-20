@@ -1,7 +1,6 @@
 // taken from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL#javascript
 // turns the given file into a picture
 function previewFile() {
-  console.log("hi")
   const preview = document.querySelector('img');
   const file = document.querySelector('input[type=file]').files[0];
   const reader = new FileReader();
@@ -32,9 +31,10 @@ $("#randomizer_img").click(function(){
     });
     this.render()
 });
+
 // appends the rest of the randomizer sliders
   $(this).parent().append("<p> Saturation Slider </p>");
-  $(this).parent().append("<input type ='range' min = ''-100' max='100' step ='1' value='0'  id='img_Saturation'>");
+  $(this).parent().append('<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Saturation">');
   $(this).parent().append('<p> Exposure Slider </p>');
   $(this).parent().append('<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Exposure">');
   $(this).parent().append('<p> Contrast Slider </p>');
@@ -47,28 +47,28 @@ $("#randomizer_img").click(function(){
 
 // assigns the slider inputs into Variables
 // NEED TO FIND OUT HOW TO GET SLIDER VARIABLE
-  console.log($("#img_saturation").val());
-  var pic_saturation = $("#img_saturation");
+  var pic_saturation = $("#img_Saturation");
   var pic_exposure = $("#img_Exposure");
   var pic_contrast = $("#img_Contrast");
   var pic_brightness = $("#img_brightness");
   var pic_hue = $("#img_hue");
+  console.log($("#img_Saturation").value)
 
 
 // changes variables to slider
-// Currently Testing since it dosen't work, thats why I edited it out
-//   Caman("#outputimg", function () {
-//   this.saturation(pic_saturation);
-//   this.exposure(50);
-//   this.contrast(50);
-//   this.brightness(50);
-//   this.hue(50);
-//   this.render()
-// });
+// Currently Testing since it dosen't work, thats why I just put the variables to 50 except saturation for testing purposes
+  Caman("#outputimg", function () {
+  this.saturation(pic_saturation.value);
+  this.exposure(50);
+  this.contrast(50);
+  this.brightness(50);
+  this.hue(50);
+  this.render()
+});
 
 
-// adds randomization button
-  $(this).parent().append('<p>	 <button id = "random_var"> Press me once you have your image </button> </p>');
+// adds randomization button (Works!)
+  $(this).parent().append('<p>	 <button id = "random_var"> Randomize </button> </p>');
   // on click, randomizes picture
   $("#random_var").click(function(){
     Caman("#outputimg", function () {
