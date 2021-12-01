@@ -51,7 +51,7 @@ $("#randomizer_img").click(function(){
 
 // assigns the slider inputs into Variables
 // NEED TO FIND OUT HOW TO GET SLIDER VARIABLE
-  var pic_saturation = $("#img_Saturation");
+  var pic_saturation = $("#img_Saturation").value;
   var pic_exposure = $("#img_Exposure");
   var pic_contrast = $("#img_Contrast");
   var pic_brightness = $("#img_brightness");
