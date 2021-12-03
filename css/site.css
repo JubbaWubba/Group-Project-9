@@ -16,3 +16,19 @@ img {
  margin-left: 800px;
  margin-right: auto;
 }
+
+body {
+  background-color: #5cdb95
+}
+
+#saturation-pics img{
+  width: 250px;
+}
+
+#exposure-pics img{
+  width: 250px;
+}
+
+#contrast-pics img{
+  width: 250px;
+}
