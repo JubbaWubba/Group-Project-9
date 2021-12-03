@@ -4,30 +4,36 @@ function previewFile() {
   const preview = document.querySelector('img');
   const file = document.querySelector('input[type=file]').files[0];
   const reader = new FileReader();
-
   reader.addEventListener("load", function () {
     // convert image file to base64 string
+    //After Image
     preview.src = reader.result;
+    //Before Image
+    //creates img elelment
+    var beforeImgElement = document.createElement('img');
+    //changes the src of the element to uploaded file src
+    beforeImgElement.src = reader.result;
+    //appends new img element to before div
+    document.getElementById('before').appendChild(beforeImgElement);
   }, false);
-
   if (file) {
     reader.readAsDataURL(file);
   }
 }
 
-
+//before image diplay
 
 
 // A function added to the randomizer button that adds all the randomized elements
-$("#randomizer_img").click(function(){
+$("#haveImageButton").click(function(){
 
     // sets the img into a canvas that can now be used to be editing, as well as resize the image keeping the original ratio
 
     Caman("#outputimg", function () {
     // resize the img
     this.resize({
-      height: (this.height / 4),
-      width: (this.width /4)
+      width: 600
+      //width: (this.width /4)
     });
     this.render()
 });
@@ -63,11 +69,11 @@ $("#randomizer_img").click(function(){
 // Currently Testing since it dosen't work, thats why I just put the variables to 50 except saturation for testing purposes
   $("#randomize_me").click(function(){
     Caman("#outputimg", function () {
-    this.saturation(pic_saturation.value);
-    this.exposure(50);
-    this.contrast(50);
-    this.brightness(50);
-    this.hue(50);
+    this.saturation(pic_saturation.val());
+    this.exposure(pic_exposure.val());
+    this.contrast(pic_contrast.val());
+    this.brightness(pic_brightness.val());
+    this.hue(pic_hue.val());
     this.render()
   });
 });

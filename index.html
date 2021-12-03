@@ -26,18 +26,28 @@
 	</div>
 	</ul>
 
+<!-- BEFORE Section -->
+  <div id ="before">
+        <p> Before:</p>
+    <!-- Put an image as well as  -->
+    <input type="file" onchange="previewFile()" id="imageInput"><br>
+  </div>
 
-<!-- Randomizer Section -->
- <div id = randomizer>
-	 <!-- Put an image as well as  -->
-	 <input type="file" onchange="previewFile()"><br>
-	 <!-- Button needed to turn img into canvas for editing -->
-	 <button id = 'randomizer_img'> Press me once you have your image :D </button>
-	 <p> Here is the image </p>
-	 <p>
-	 <img src="" alt="Image preview..." id = outputimg>
- 	 </p>
-	</div>
+
+
+<!-- AFTER Section -->
+   <div id="after">
+  	 <p> After:</p>
+  	 <img src="" alt="Image preview..." id ="outputimg">
+   </div>
+
+
+   <!-- Randomizer Section -->
+    <div id ="randomizer">
+     	 <!-- Button needed to turn img into canvas for editing -->
+     	 <button id ='haveImageButton'> Press me once you have your image :D </button>
+    </div>
+
 
 </body>
 </html>
