@@ -12,6 +12,11 @@
 
 </head>
 <body>
+<!-- Title at the top -->
+	<div id="title">
+		<h1> IMAGE ADJUSTER </h1>
+		<h5> A beginners guide to editing pictures </h5>
+	</div>
 
 <!-- BEFORE Section -->
   <div id ="before">
@@ -32,7 +37,28 @@
    <!-- Randomizer Section -->
     <div id ="randomizer">
      	 <!-- Button needed to turn img into canvas for editing -->
-     	 <button id ='haveImageButton'> Press me once you have your image :D </button>
+			 <p> Saturation Slider </p>
+			 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Saturation">
+			 <div id = Saturation_val>
+				</div>
+			 <p> Exposure Slider </p>
+			 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Exposure">
+			 <div id = Exposure_val>
+				</div>
+			 <p> Contrast Slider </p>
+			 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Contrast">
+			 <div id = Contrast_Val>
+				</div>
+			 <p> Brightness Slider </p>
+			 	<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_brightness">
+				<div id = Brightness_Val>
+				</div>
+				<p> Hue Slider </p>
+				<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_hue">
+				<div id = Hue_Val>
+ 				</div>
+				<p>	 <button id = "randomize_me"> Press me apply changes </button> </p>
+				<p>	 <button id = "random_var"> Randomize </button> </p>
     </div>
 
 	<!-- Cheat Sheat section  -->

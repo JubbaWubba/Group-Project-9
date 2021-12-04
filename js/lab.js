@@ -1,7 +1,7 @@
 // taken from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL#javascript
 // turns the given file into a picture
 function previewFile() {
-  const preview = document.querySelector('img');
+  const preview = document.getElementById('outputimg');
   const file = document.querySelector('input[type=file]').files[0];
   const reader = new FileReader();
   reader.addEventListener("load", function () {
@@ -25,7 +25,7 @@ function previewFile() {
 
 
 // A function added to the randomizer button that adds all the randomized elements
-$("#haveImageButton").click(function(){
+$("#imageInput").on("input", (function(){
 
     // sets the img into a canvas that can now be used to be editing, as well as resize the image keeping the original ratio
 
@@ -33,25 +33,9 @@ $("#haveImageButton").click(function(){
     // resize the img
     this.resize({
       width: 600
-      //width: (this.width /4)
     });
     this.render()
 });
-
-// appends the rest of the randomizer sliders
-  $(this).parent().append("<p> Saturation Slider </p>");
-  $(this).parent().append('<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Saturation">');
-  $(this).parent().append('<p> Exposure Slider </p>');
-  $(this).parent().append('<input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Exposure">');
-  $(this).parent().append('<p> Contrast Slider </p>');
-  $(this).parent().append('	 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_Contrast">');
-  $(this).parent().append('<p> Shadow Slider </p>');
-  $(this).parent().append('		 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_brightness">');
-  $(this).parent().append('<p> Highlight Slider </p>');
-  $(this).parent().append('		 <input type ="range" min = "-100" max="100" step ="1" value="0"  id="img_hue">');
-
-  // randomizer button
-  $(this).parent().append('	<p>	 <button id = "randomize_me"> Press me apply changes </button> </p>');
 
 
 
@@ -64,6 +48,25 @@ $("#haveImageButton").click(function(){
   var pic_hue = $("#img_hue");
   console.log(pic_saturation)
 
+ $("#img_Saturation").on("input", function(){
+  $("#Saturation_val").html(pic_saturation.val());
+ });
+
+ $("#img_Exposure").on("input", function(){
+  $("#Exposure_val").html(pic_exposure.val());
+ });
+
+ $("#img_brightness").on("input", function(){
+  $("#Brightness_Val").html(pic_brightness.val());
+ });
+
+ $("#img_Contrast").on("input", function(){
+  $("#Contrast_Val").html(pic_contrast.val());
+ });
+
+ $("#img_hue").on("input", function(){
+  $("#Hue_Val").html(pic_hue.val());
+ });
 
 // changes variables to slider
 // Currently Testing since it dosen't work, thats why I just put the variables to 50 except saturation for testing purposes
@@ -80,17 +83,16 @@ $("#haveImageButton").click(function(){
 
 
 // adds randomization button (Works!)
-  $(this).parent().append('<p>	 <button id = "random_var"> Randomize </button> </p>');
   // on click, randomizes picture
   $("#random_var").click(function(){
     Caman("#outputimg", function () {
-    this.saturation(Math.random() * (50 - (-50))+50);
-    this.exposure(Math.random() * (10 - (-10))+10);
-    this.contrast(Math.random() * (5 - (-5)) + 5);
-    this.brightness(Math.random() * (10 - (-10)) + 10);
-    this.hue(Math.random() * (20 - (-20)) + 20);
+    this.saturation(Math.random() * (50 - (-50))+(-50));
+    this.exposure(Math.random() * (10 - (-10))+(-10));
+    this.contrast(Math.random() * (5 - (-5)) + (-5));
+    this.brightness(Math.random() * (10 - (-10)) + (-10));
+    this.hue(Math.random() * (20 - (-20)) + (-20));
     this.render()
   });
 });
 
-  });
+}));

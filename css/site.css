@@ -5,11 +5,13 @@ img {
 #before {
   float: left;
   position:relative;
+  border-style:solid;
 }
 
 #after {
   float: right;
   position: relative;
+  border-style:solid;
 }
 
 #randomizer {
@@ -31,4 +33,23 @@ body {
 
 #contrast-pics img{
   width: 250px;
+}
+
+#title {
+  text-align: center;
+  padding: 5px;
+  background: #edf5e1;
+  margin: 20px;
+  font-family: copperplate;
+  font-size: 40px;
+  border-style: solid;
+  border-color: #05386b;
+}
+
+#title h1{
+  color: #05386b;
+}
+
+#title h5{
+  color: #05386b;
 }
