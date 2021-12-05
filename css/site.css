@@ -1,7 +1,9 @@
 img {
   width: 600px;
 }
-
+#outputimg {
+  width: 600px;
+}
 #before {
   float: left;
   position:relative;
@@ -61,4 +63,8 @@ body {
 
 #title h5{
   color: #05386b;
+}
+
+#Cheat_sheat{
+  margin-top: 300px;
 }
