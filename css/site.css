@@ -35,6 +35,14 @@ body {
   width: 250px;
 }
 
+#brightness-pics img{
+  width: 250px;
+}
+
+#hue-pics img {
+  width: 250px;
+}
+
 #title {
   text-align: center;
   padding: 5px;
@@ -43,6 +51,7 @@ body {
   font-family: copperplate;
   font-size: 40px;
   border-style: solid;
+  border-width: thick;
   border-color: #05386b;
 }
 
