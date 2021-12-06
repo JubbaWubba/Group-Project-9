@@ -25,19 +25,21 @@ body {
   background-color: #5cdb95
 }
 
-#saturation-pics img{
+#saturation-pics img {
+  position: relative;
+  top: 20px;
   width: 250px;
 }
 
-#exposure-pics img{
+#exposure-pics img {
   width: 250px;
 }
 
-#contrast-pics img{
+#contrast-pics img {
   width: 250px;
 }
 
-#brightness-pics img{
+#brightness-pics img {
   width: 250px;
 }
 
@@ -57,14 +59,123 @@ body {
   border-color: #05386b;
 }
 
-#title h1{
+#Cheat-sheet-title {
+  text-align: center;
+  background: #edf5e1;
+  padding: 2.5;
+  margin: 5px;
+  font-family: copperplate;
+  font-size: 20px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #05386b;
+}
+
+#Cheat-sheet-title h2 {
+  color: #05386b;
+}
+#title h1 {
   color: #05386b;
 }
 
-#title h5{
+#title h5 {
   color: #05386b;
 }
 
-#Cheat_sheat{
-  margin-top: 300px;
+#Cheat_sheat {
+ margin-top: auto;
+}
+
+/* Text for the Cheat Sheet */
+#Sat-section p{
+  font-size: 25px;
+  font-family: copperplate;
+  padding: 2px;
+  margin: 5px;
+}
+
+#Sat-section h2{
+  font-size: 30px;
+  font-family: copperplate;
+}
+
+#Exp-section p{
+  font-size: 25px;
+  font-family: copperplate;
+  padding: 2px;
+  margin: 5px;
+}
+
+#Exp-section h2{
+  font-size: 30px;
+  font-family: copperplate;
+}
+
+#Con-section p{
+  font-size: 25px;
+  font-family: copperplate;
+  padding: 2px;
+  margin: 5px;
+}
+
+#Con-section h2{
+  font-size: 30px;
+  font-family: copperplate;
+}
+
+#Bri-section p{
+  font-size: 25px;
+  font-family: copperplate;
+  padding: 2px;
+  margin: 5px;
+}
+
+#Bri-section h2{
+  font-size: 30px;
+  font-family: copperplate;
+}
+
+#Hue-section p{
+  font-size: 25px;
+  font-family: copperplate;
+  padding: 2px;
+  margin: 5px;
+}
+
+#Hue-section h2{
+  font-size: 30px;
+  font-family: copperplate;
+}
+/* End of Text section for the Cheat Sheet */
+
+#saturation-pics {
+  float: right;
+  position:relative;
+  margin-top: 10px;
+}
+
+#exposure-pics {
+  float: right;
+  position:relative;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#contrast-pics {
+  float: right;
+  position:relative;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#brightness-pics {
+  float: right;
+  position:relative;
+  margin-top: 50px;
+}
+
+#hue-pics {
+  float: right;
+  position:relative;
+  margin-top: 50px;
 }
