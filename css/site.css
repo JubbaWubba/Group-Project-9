@@ -1,8 +1,8 @@
 img {
-  width: 600px;
+  width: 400px;
 }
 #outputimg {
-  width: 600px;
+  width: 400px;
 }
 #before {
   float: left;
@@ -28,11 +28,11 @@ body {
 #saturation-pics img {
   position: relative;
   top: 20px;
-  width: 250px;
+  width: 200px;
 }
 
 #exposure-pics img {
-  width: 250px;
+  width: 200px;
 }
 
 #contrast-pics img {
@@ -83,7 +83,7 @@ body {
 }
 
 #Cheat_sheat {
- margin-top: auto;
+ margin-top: 200px;
 }
 
 /* Text for the Cheat Sheet */
@@ -152,6 +152,7 @@ body {
   float: right;
   position:relative;
   margin-top: 10px;
+  margin-right: 50px;
 }
 
 #exposure-pics {
