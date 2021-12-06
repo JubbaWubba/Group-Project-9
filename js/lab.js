@@ -195,37 +195,6 @@ function randomize() {
   applyChanges();
 };
 
-//downlaod
-// let downloadButton = document.getElementById("download");
-// let img = document.getElementById("outputimg");
-//
-//
-// downloadButton.addEventListener('click', () => {
-//   let imgPath = img.getAttribute('src');
-//   let filename = getFileName(imgPath);
-//
-//   saveas(imgPath, filename);
-// });
-//
-// function getFileName(str){
-//   return str.substring(str.last.lastIndexOf('/')+1);
-// }
-
-
-let downloadLink = '';
-$('#download').click(function(){
-Caman("#outputimg", function () {
-  downloadLink = document.getElementById('outputimg').src;
-  //var downloadLink = $('img#outputimg').src;
-  console.log(downloadLink);
-  this.render(function () {
-    this.save(downloadLink);
-  });
-});
-
-})
-
-
 
 
 //buton coldowns
