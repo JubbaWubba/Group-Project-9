@@ -8,12 +8,14 @@ img {
   float: left;
   position:relative;
   border-style:solid;
+  border-color: #05386b;
 }
 
 #after {
   float: right;
   position: relative;
   border-style:solid;
+  border-color: #05386b;
 }
 
 #randomizer {
@@ -99,11 +101,13 @@ body {
   font-family: copperplate;
   padding: 2px;
   margin: 5px;
+  color: #05386b;
 }
 
 #Sat-section h2{
   font-size: 30px;
   font-family: copperplate;
+  color: #05386b;
 }
 
 #Exp-section p{
@@ -111,11 +115,13 @@ body {
   font-family: copperplate;
   padding: 2px;
   margin: 5px;
+  color: #05386b;
 }
 
 #Exp-section h2{
   font-size: 30px;
   font-family: copperplate;
+  color: #05386b;
 }
 
 #Con-section p{
@@ -123,11 +129,13 @@ body {
   font-family: copperplate;
   padding: 2px;
   margin: 5px;
+  color: #05386b;
 }
 
 #Con-section h2{
   font-size: 30px;
   font-family: copperplate;
+  color: #05386b;
 }
 
 #Bri-section p{
@@ -135,11 +143,13 @@ body {
   font-family: copperplate;
   padding: 2px;
   margin: 5px;
+  color: #05386b;
 }
 
 #Bri-section h2{
   font-size: 30px;
   font-family: copperplate;
+  color: #05386b;
 }
 
 #Hue-section p{
@@ -147,11 +157,13 @@ body {
   font-family: copperplate;
   padding: 2px;
   margin: 5px;
+  color: #05386b;
 }
 
 #Hue-section h2{
   font-size: 30px;
   font-family: copperplate;
+  color: #05386b;
 }
 /* End of Text section for the Cheat Sheet */
 
