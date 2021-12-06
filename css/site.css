@@ -19,8 +19,9 @@ img {
 }
 
 #randomizer {
- margin-left: 800px;
- margin-right: auto;
+  text-align: center;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 body {

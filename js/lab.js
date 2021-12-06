@@ -1,6 +1,6 @@
 
 
-
+//image properties in variables that all functions can acess
 let saturationVal = 0;
 let exposureVal = 0;
 let contrastVal = 0;
@@ -125,7 +125,7 @@ function applyChanges() {
     this.saturation(saturationVal/2);
     this.exposure(exposureVal/2);
     this.brightness(brightnessVal/2);
-    this.hue(hueVal/4);
+    this.hue(hueVal/2);
     this.render()
 });
 };
