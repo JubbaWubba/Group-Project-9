@@ -25,6 +25,13 @@ body {
   background-color: #5cdb95
 }
 
+#pictures {
+  float:right;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+/*
 #saturation-pics img {
   position: relative;
   top: 20px;
@@ -32,21 +39,24 @@ body {
 }
 
 #exposure-pics img {
+  position: relative;
+  top: 20px;
   width: 200px;
 }
 
 #contrast-pics img {
-  width: 250px;
+  width: 200px;
 }
 
 #brightness-pics img {
-  width: 250px;
+  width: 200px;
+  text-align: right;
 }
 
 #hue-pics img {
-  width: 250px;
+  width: 200px;
 }
-
+*/
 #title {
   text-align: center;
   padding: 5px;
@@ -148,6 +158,7 @@ body {
 }
 /* End of Text section for the Cheat Sheet */
 
+/*
 #saturation-pics {
   float: right;
   position:relative;
@@ -157,9 +168,10 @@ body {
 
 #exposure-pics {
   float: right;
-  position:relative;
-  margin-top: 50px;
+  position: absolute;
+  margin-top: 10px;
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 #contrast-pics {
@@ -167,16 +179,19 @@ body {
   position:relative;
   margin-top: 50px;
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 #brightness-pics {
-  float: right;
+  text-align: right;
   position:relative;
   margin-top: 50px;
+  margin-right: 50px;
 }
 
 #hue-pics {
   float: right;
   position:relative;
   margin-top: 50px;
+  margin-right: 50px;
 }
