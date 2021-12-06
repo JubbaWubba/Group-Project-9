@@ -122,7 +122,7 @@ function applyChanges() {
   Caman("#outputimg", function () {
     //div by 4 cause intense
     this.contrast(contrastVal/4);
-    this.saturation(saturationVal/2);
+    this.saturation(saturationVal/1);
     this.exposure(exposureVal/2);
     this.brightness(brightnessVal/2);
     this.hue(hueVal/2);
